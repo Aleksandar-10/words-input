@@ -7,14 +7,6 @@ public class Klass1 {
 
     // crate scanner to read from Command panel
     static Scanner scanner = new Scanner(System.in);
-    static String STOP_WORD = "STOP";
-
-    // create attributes
-    private static int charCount;
-    private static int lineCount;
-    private static int wordCount;
-    private static ArrayList<String> words;
-    private static String longestWord;
 
     public static void main(String[] args) {
         String input;
@@ -28,52 +20,16 @@ public class Klass1 {
             continueLoop = klass2.count(input);
         } while (continueLoop);
 
-        //Storing in local variables
-        storeVariables(klass2);
-
         //Print results.
-        print();
+        print(klass2);
     }
 
 
-    private static void storeVariables(Klass2 klass2) { //??
-        charCount = klass2.getCharCounter();
-        lineCount = klass2.getLineCounter();
-        words = klass2.getWords();
-        wordCount = klass2.getWords().size();
-        longestWord = klass2.getLongestWord();
+    private static void print(Klass2 klass2) {
+        System.out.println("Number of characters: " + klass2.getCharCounter());
+        System.out.println("Number of lines: " + klass2.getLineCounter());
+        System.out.println("Number of words: " + klass2.getWords().size());
+        System.out.println("Words: " +klass2.getWords());
+        System.out.println("Longest word: " + klass2.getLongestWord());
     }
-
-
-    private static void print() {
-        System.out.println("Number of characters: " + getCharCount());
-        System.out.println("Number of lines: " + getLineCount());
-        System.out.println("Number of words: " + getWordCount());
-        System.out.println("Words: " + getWords());
-        System.out.println("Longest word: " + getLongestWord());
-    }
-
-    public static int getCharCount() { //??
-        return charCount;
-    }
-
-    public static ArrayList<String> getWords() {
-        return words;
-    }
-
-    public static String getLongestWord() {
-        return longestWord;
-    }
-
-    public static int getLineCount() {
-        return lineCount;
-    }
-
-
-    public static int getWordCount() {
-        return wordCount;
-    }
-
-
-
 }

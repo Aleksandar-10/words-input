@@ -3,6 +3,8 @@ package ispit1;
 import java.util.ArrayList;
 
 public class Klass2 {
+    static String STOP_WORD = "STOP";
+
     private int charCounter = 0;
     private int lineCounter = 0;
     private final ArrayList<String> words = new ArrayList<>();
@@ -13,7 +15,7 @@ public class Klass2 {
     }
 
     boolean count(String input) {
-        if (!input.equalsIgnoreCase(Klass1.STOP_WORD)) {
+        if (!input.equalsIgnoreCase(STOP_WORD)) {
 
             lineCounter++;
             charCounter += input.length();
