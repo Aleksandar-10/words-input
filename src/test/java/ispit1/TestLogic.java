@@ -18,7 +18,7 @@ public class TestLogic {
         assertEquals(expected, actualCharCount);
         assertEquals(expected, actualLineCount);
     }
-    // ako prviot zbor e Stop, treba da izvadi 0 char i 0 redovi
+    // Test if the first word is Stop, should not be counted
 
 
     @Test
@@ -36,7 +36,8 @@ public class TestLogic {
         int expectedLineCounter = 3;
         assertEquals(expectedLineCounter, actualLineCounter);
     }
-    // ako vneseme 3 parametri, treba da izvadi 12 char, i 3 reda
+    // Test if we enter 3 parameters, it should give 12 char and 3 rows
+
 
     @Test
     void testCountWordsWithStop() {
@@ -55,7 +56,8 @@ public class TestLogic {
         assertEquals(expectedLineCounter, actualLineCounter);
 
     }
-// ako vneseme 3 parametri i STOP, treba da izvadi 12 char, i 3 reda, i da ne go broi STOP
+    // Test if we enter 3 parameters and Stop, it should give 12 char and 3 rows, and not count the Stop
+
 
     @Test
     void testLongestWord() {
@@ -69,8 +71,7 @@ public class TestLogic {
         String expected = "aleksandar";
         assertEquals(expected, actual);
 
-        //Najdolgiot zbor e prviot od povekje so ista (najgolema) dolzina
-
+        // Test the Longest word
 
     }
 

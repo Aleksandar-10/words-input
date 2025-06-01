@@ -1,11 +1,10 @@
 package ispit1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Klass1 {
 
-    // crate scanner to read from Command panel
+    // crate scanner to read from the Command panel
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
