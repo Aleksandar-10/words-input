@@ -23,7 +23,7 @@ public class Klass2 {
             String[] splitWords = input.split(" ");
             for (String word : splitWords) {
                 words.add(word);
-                updateLongestWord(word); //??
+                updateLongestWord(word);
             }
             return true;
         }
@@ -31,7 +31,7 @@ public class Klass2 {
     }
 
     private void updateLongestWord(String word) {
-        if (word.length() > longestWord.length()) { //??
+        if (word.length() > longestWord.length()) {
             longestWord = word;
         }
     }

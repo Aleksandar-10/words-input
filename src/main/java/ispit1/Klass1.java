@@ -19,7 +19,7 @@ public class Klass1 {
             continueLoop = klass2.count(input);
         } while (continueLoop);
 
-        //Print results.
+        //Print results
         print(klass2);
     }
 
